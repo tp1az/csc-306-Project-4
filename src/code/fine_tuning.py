@@ -50,43 +50,4 @@ class TabularQADataset(Dataset):
         labels[labels == self.tokenizer.pad_token_id] = -100
 
         return {
-            "input_ids": input_encodings["input_ids"],
-            "attention_mask": input_encodings["attention_mask"],
-            "labels": labels,
-        }
-
-# Choose a pre-trained model (here, t5-small is used as an example)
-model_name = "t5-small"
-tokenizer = T5Tokenizer.from_pretrained(model_name)
-model = T5ForConditionalGeneration.from_pretrained(model_name)
-
-# Create the dataset.
-df = pd.read_parquet("../data/066_IBM_HR/sample.parquet")
-train_dataset = TabularQADataset(df, tokenizer)
-
-# Set up training arguments.
-training_args = TrainingArguments(
-    output_dir="./results",
-    num_train_epochs=3,
-    per_device_train_batch_size=2,
-    learning_rate=5e-5,
-    weight_decay=0.01,
-    logging_steps=10,
-    save_steps=10,
-    evaluation_strategy="no",  # Change to 'epoch' if you have an evaluation dataset.
-)
-
-# Initialize the Trainer.
-trainer = Trainer(
-    model=model,
-    args=training_args,
-    train_dataset=train_dataset,
-    tokenizer=tokenizer,
-)
-
-# Fine-tune the model.
-trainer.train()
-
-# Save the fine-tuned model and tokenizer.
-model.save_pretrained("./fine_tuned_model")
-tokenizer.save_pretrained("./fine_tuned_model")
+            "input_ids": input_encodings["input_i
