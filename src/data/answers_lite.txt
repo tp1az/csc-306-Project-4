@@ -7,10 +7,10 @@ True
 True
 True
 True
-LaboratoryTechnician
+Laboratory Technician
 Sales
 Divorced
-LifeSciences
+Life Sciences
 Travel_Frequently
 Male
 3
@@ -24,19 +24,19 @@ Other
 8.0
 8.0
 8.0
-[4,3]
-[2028,2090,2426,2661,2670]
-[2,1,4,3]
-[23,22,21,20,17]
-[38,32,29,36,22]
-['LaboratoryTechnician','ResearchScientist','ManufacturingDirector']
-['Research&Development','Sales']
-['Single','Married','Divorced']
-['LifeSciences','Other','Medical']
-['Travel_Rarely','Travel_Frequently','Non-Travel']
-['No','Yes']
-[1,2,3,4]
-[1,2,3]
+[4, 3]
+[2028, 2090, 2426, 2661, 2670]
+[2, 1, 4, 3]
+[23, 22, 21, 20, 17]
+[38, 32, 29, 36, 22]
+['Laboratory Technician', 'Research Scientist', 'Manufacturing Director']
+['Research & Development', 'Sales']
+['Single', 'Married', 'Divorced']
+['Life Sciences', 'Other', 'Medical']
+['Travel_Rarely', 'Travel_Frequently', 'Non-Travel']
+['No', 'Yes']
+[1, 2, 3, 4]
+[1, 2, 3]
 False
 True
 True
@@ -60,12 +60,12 @@ charlietrisj
 2004
 1
 16
-[2012,2010,2011,2009]
-[5,3,2,2,1]
+[2012, 2010, 2011, 2009]
+[5, 3, 2, 2, 1]
 []
 []
-[1164645,643970,281828,262330,258705]
-['2011','2012','2010','2009']
+[1164645, 643970, 281828, 262330, 258705]
+['2011', '2012', '2010', '2009']
 False
 False
 False
@@ -73,13 +73,13 @@ False
 True
 True
 False
-RequestforQuotations
-WesternandCentralAfrica
-Micronesia,FederatedStatesof
-ConsultantServices
-EasternandSouthernAfrica
-BurkinaFaso
-Agriculture,FishingandForestry
+Request for Quotations
+Western and Central Africa
+Micronesia, Federated States of
+Consultant Services
+Eastern and Southern Africa
+Burkina Faso
+Agriculture, Fishing and Forestry
 800433.3
 3.0
 20.0
@@ -87,19 +87,19 @@ Agriculture,FishingandForestry
 477763.0
 224496.80
 13
-[800433.3,716716.34,369866.76]
+[800433.3, 716716.34, 369866.76]
 True
-[477763.0,552271.0,754040.0,783608.0,841649.0]
-[2024,2025,2023]
-[13222.93,2685156.49,591432.79]
-[157840.9,166464.39,173560.0]
-[716716.34,369866.76,198952.48,189088.46]
-['BurkinaFaso','Nigeria','Niger','Ethiopia','Somalia']
-['EASTASIAANDPACIFIC','EasternandSouthernAfrica','LATINAMERICAANDCARIBBEAN','WesternandCentralAfrica']
-['RequestforBids','IndividualConsultantSelection','RequestforQuotations','ConsultantQualificationSelection']
-['Ghana','World','BurkinaFaso','Nigeria']
-['Post','Prior']
-['Post','Prior']
+[477763.0, 552271.0, 754040.0, 783608.0, 841649.0]
+[2024, 2025, 2023]
+[13222.93, 2685156.49, 591432.79]
+[157840.9, 166464.39, 173560.0]
+[716716.34, 369866.76, 198952.48, 189088.46]
+['Burkina Faso', 'Nigeria', 'Niger', 'Ethiopia', 'Somalia']
+['EAST ASIA AND PACIFIC', 'Eastern and Southern Africa', 'LATIN AMERICA AND CARIBBEAN', 'Western and Central Africa']
+['Request for Bids', 'Individual Consultant Selection', 'Request for Quotations', 'Consultant Qualification Selection']
+['Ghana', 'World', 'Burkina Faso', 'Nigeria']
+['Post', 'Prior']
+['Post', 'Prior']
 True
 False
 True
@@ -113,7 +113,7 @@ Attractions
 Automotive
 Automotive
 150
-CommercialTrucks
+Commercial Trucks
 Attractions
 20
 1
@@ -125,16 +125,16 @@ Attractions
 True
 20
 ['150']
-[15,5]
-[0,0]
-[20,18,6,0]
-['Attractions','Automotive']
-['Attractions','Automotive']
-['AmusementandThemeParks','Bars&Restaurants','Casinos','Parks']
+[15, 5]
+[0, 0]
+[20, 18, 6, 0]
+['Attractions', 'Automotive']
+['Attractions', 'Automotive']
+['Amusement and Theme Parks', 'Bars & Restaurants', 'Casinos', 'Parks']
 ['Attractions']
-['Attractions','Attractions','Attractions','Attractions']
-['150','1','2']
-['150','1','2']
+['Attractions', 'Attractions', 'Attractions', 'Attractions']
+['150', '1', '2']
+['150', '1', '2']
 True
 True
 True
@@ -145,7 +145,7 @@ False
 True
 Hacendado
 Spain
-GreenDot
+Green Dot
 1
 Hacendado
 elcoco
@@ -157,13 +157,13 @@ elcoco
 20
 2
 [00001522]
-"['Seitánalaplancha']"
-['GreenDot','Nogluten']
-['GreenDot','Nogluten']
-['Mercadona','Hacendado']
-[7,5]
-['Spain','UnitedKingdom','UnitedStates']
-[18,1,1]
+"['Seitán a la plancha']"
+['Green Dot', 'No gluten']
+['Green Dot', 'No gluten']
+['Mercadona', 'Hacendado']
+[7, 5]
+['Spain', 'United Kingdom', 'United States']
+[18, 1, 1]
 True
 True
 True
@@ -174,9 +174,9 @@ True
 True
 Switzerland
 Pakistan
-PuertoRico
+Puerto Rico
 Switzerland
-HongKong(China)
+Hong Kong (China)
 Singapore
 Barbados
 101.1
@@ -187,19 +187,19 @@ Barbados
 72.1
 110.91
 3.0
-[46.5,36.7,39.2,67.2,19.0]
-[62.4,62.7,63.1,63.2,63.3]
-[158.7,54.6,120.3,111.1,43.5]
-[109.1,88.4,84.6]
-[97.0,83.3,86.8,50.4,69.4]
-[42.3,42.4,43.2,44.7,45.6]
-[101.1,99.4,102.4,102.4,103.5]
-['Switzerland','Bahamas','Iceland','Singapore','Barbados']
-['Switzerland','Iceland','HongKong(China)']
-['Singapore','HongKong(China)','Switzerland']
-['Australia','Austria','Canada','NewZealand','Ireland','France']
-['Luxembourg','Kuwait','Qatar','Switzerland','UnitedStates']
-['HongKong(China)','Singapore','PuertoRico']
+[46.5, 36.7, 39.2, 67.2, 19.0]
+[62.4, 62.7, 63.1, 63.2, 63.3]
+[158.7, 54.6, 120.3, 111.1, 43.5]
+[109.1, 88.4, 84.6]
+[97.0, 83.3, 86.8, 50.4, 69.4]
+[42.3, 42.4, 43.2, 44.7, 45.6]
+[101.1, 99.4, 102.4, 102.4, 103.5]
+['Switzerland', 'Bahamas', 'Iceland', 'Singapore', 'Barbados']
+['Switzerland', 'Iceland', 'Hong Kong (China)']
+['Singapore', 'Hong Kong (China)', 'Switzerland']
+['Australia', 'Austria', 'Canada', 'New Zealand', 'Ireland', 'France']
+['Luxembourg', 'Kuwait', 'Qatar', 'Switzerland', 'United States']
+['Hong Kong (China)', 'Singapore', 'Puerto Rico']
 True
 False
 True
@@ -224,21 +224,21 @@ True
 0.4924867083432169
 233.0
 4.0
-[337,330,328,327,325]
+[337, 330, 328, 327, 325]
 0
 0
-[118,115,112,111,110]
-[7.9,8.0,8.0,8.0,8.0]
-[4.5,4.5,4.0,4.0,4.0]
-[4.5,4.5,4.5,4.5,4.0]
-[118,115,112,111,110]
-[337,330]
-[7.9,8.21]
-[4,5,4,4,4]
-[2,3,1,3,3]
-[4.5,4.5,4.0,3.5]
-[4.5,4.5,4.0,4.0,3.5]
-[4.0,3.5,1.5,3.0,3.0]
+[118, 115, 112, 111, 110]
+[7.9, 8.0, 8.0, 8.0, 8.0]
+[4.5, 4.5, 4.0, 4.0, 4.0]
+[4.5, 4.5, 4.5, 4.5, 4.0]
+[118, 115, 112, 111, 110]
+[337, 330]
+[7.9, 8.21]
+[4, 5, 4, 4, 4]
+[2, 3, 1, 3, 3]
+[4.5, 4.5, 4.0, 3.5]
+[4.5, 4.5, 4.0, 4.0, 3.5]
+[4.0, 3.5, 1.5, 3.0, 3.0]
 False
 True
 True
@@ -265,12 +265,12 @@ no
 5
 4
 29.35
-[42.13,40.3]
-[39611.75,10602.38,11090.71]
-[18,23,19,23,25]
-[18,19,19]
+[42.13, 40.3]
+[39611.75, 10602.38, 11090.71]
+[18, 23, 19, 23, 25]
+[18, 19, 19]
 ['yes']
-['southeast','southwest','southeast']
+['southeast', 'southwest', 'southeast']
 True
 True
 False
@@ -280,8 +280,8 @@ True
 True
 True
 True
-52kg
-74kg
+52 kg
+74 kg
 Squat
 398.0
 10
@@ -289,23 +289,23 @@ Squat
 5
 398
 269
-LauraTaylor
+Laura Taylor
 2125.0
 133.0
 287.0
 2.0
-[398,396,396]
-[111,120,132,133,178]
-[1390,694,675,598,556]
-[22,21,20]
-[235,273]
-[359,265,264]
-['EmilyDavis','JessicaWilson','JaneSmith','LauraTaylor','SarahThomas']
-['ChrisBrown','JohnDoe','MichaelJohnson','DanielLee','MatthewAnderson']
-['74kg','120kg']
-['LauraTaylor','SarahThomas','MatthewAnderson','JaneSmith','LauraTaylor']
-['BenchPress','Deadlift','Squat']
-['BenchPress','Deadlift','Squat']
+[398, 396, 396]
+[111, 120, 132, 133, 178]
+[1390, 694, 675, 598, 556]
+[22, 21, 20]
+[235, 273]
+[359, 265, 264]
+['Emily Davis', 'Jessica Wilson', 'Jane Smith', 'Laura Taylor', 'Sarah Thomas']
+['Chris Brown', 'John Doe', 'Michael Johnson', 'Daniel Lee', 'Matthew Anderson']
+['74 kg', '120 kg']
+['Laura Taylor', 'Sarah Thomas', 'Matthew Anderson', 'Jane Smith', 'Laura Taylor']
+['Bench Press', 'Deadlift', 'Squat']
+['Bench Press', 'Deadlift', 'Squat']
 False
 False
 True
@@ -314,11 +314,11 @@ True
 True
 False
 False
-HHSRegion04
-Heartdisease
+HHS Region 04
+Heart disease
 Male
 Urban
-HHSRegion04
+HHS Region 04
 276.4
 0.4
 8
@@ -327,14 +327,14 @@ HHSRegion04
 47.64
 5
 161.29
-[276.4,248.8,246.0,229.0,226.8]
-[0.4,0.4,0.5,0.5,0.5]
-[115.1,124.5,132.2,138.1,139.6]
-[1.0,0.8,0.8,0.6]
-[0.4,0.4,0.5,0.5,0.5]
-['Heartdisease']
-['HHSRegion04','HHSRegion02','HHSRegion03']
-['Urban','Rural']
+[276.4, 248.8, 246.0, 229.0, 226.8]
+[0.4, 0.4, 0.5, 0.5, 0.5]
+[115.1, 124.5, 132.2, 138.1, 139.6]
+[1.0, 0.8, 0.8, 0.6]
+[0.4, 0.4, 0.5, 0.5, 0.5]
+['Heart disease']
+['HHS Region 04', 'HHS Region 02', 'HHS Region 03']
+['Urban', 'Rural']
 False
 False
 False
@@ -343,13 +343,13 @@ True
 True
 True
 False
-KevinDurant
-KevinDurant
+Kevin Durant
+Kevin Durant
 OKC
-KevinDurant
+Kevin Durant
 GSW
-RussellWestbrook
-MontaEllis
+Russell Westbrook
+Monta Ellis
 169
 8904
 7064
@@ -359,18 +359,18 @@ MontaEllis
 0
 0
 154
-[886,670,662]
-[607,604,551]
-[2280,2133,2036,2023]
-[169,160,145]
-[154,105,91]
-['RussellWestbrook','MontaEllis','KembaWalker','DeMarDeRozan','DamianLillard']
-['DavidLee','LaMarcusAldridge','BlakeGriffin']
-['OKC','MIA','NYK','GSW','POR']
-[GSW,OKC,MIA,POR,NYK]
-['MontaEllis','KembaWalker']
-['BrookLopez','KevinDurant','LaMarcusAldridge']
-['RussellWestbrook','DeronWilliams','LeBronJames','StephenCurry']
+[886, 670, 662]
+[607, 604, 551]
+[2280, 2133, 2036, 2023]
+[169, 160, 145]
+[154, 105, 91]
+['Russell Westbrook', 'Monta Ellis', 'Kemba Walker', 'DeMar DeRozan', 'Damian Lillard' ]
+['David Lee', 'LaMarcus Aldridge', 'Blake Griffin']
+['OKC', 'MIA', 'NYK', 'GSW', 'POR']
+[GSW, OKC, MIA, POR, NYK]
+['Monta Ellis', 'Kemba Walker']
+['Brook Lopez', 'Kevin Durant', 'LaMarcus Aldridge']
+['Russell Westbrook', 'Deron Williams', 'LeBron James', 'Stephen Curry']
 False
 True
 False
@@ -393,15 +393,15 @@ True
 20
 0.40
 2.38
-[180.0,165.0,165.0]
-[16.0,17.0,18.0,19.0]
+[180.0, 165.0, 165.0]
+[16.0, 17.0, 18.0, 19.0]
 []
-[49.0,50.0]
-[0,1]
+[49.0, 50.0]
+[0, 1]
 [0]
-[165.0,180.0]
+[165.0, 180.0]
 []
-[17.0,18.0]
+[17.0, 18.0]
 False
 False
 True
@@ -427,20 +427,20 @@ Monday
 643.1
 4.62
 20
-[26.4,24.1,22.9]
-[70.8,77.5,80.8,94.3,97.1]
-[4,5,6]
-[21,27,27,29]
-[7.2,6.7,6.7,5.4,5.4]
-[0.0,0.0,0.0]
-[26.2,27.4,27.9]
-[January,February,August,November,December]
-[Monday,Tuesday,Wednesday]
-[August,November]
-[Sunday,Tuesday,Monday]
-['December','February','August']
-['Tuesday','Monday','Sunday','Saturday']
-['Monday','Thursday','Saturday','Wednesday']
+[26.4, 24.1, 22.9]
+[70.8, 77.5, 80.8, 94.3, 97.1]
+[4, 5, 6]
+[21, 27, 27, 29]
+[7.2, 6.7, 6.7, 5.4, 5.4]
+[0.0, 0.0, 0.0]
+[26.2, 27.4, 27.9]
+[January, February, August, November, December]
+[Monday, Tuesday, Wednesday]
+[August, November]
+[Sunday, Tuesday, Monday]
+['December', 'February', 'August']
+['Tuesday', 'Monday', 'Sunday', 'Saturday']
+['Monday', 'Thursday', 'Saturday', 'Wednesday']
 False
 False
 False
@@ -449,13 +449,13 @@ False
 True
 True
 True
-LowerManhattan
+Lower Manhattan
 Coffee
 Sun
-Hotchocolate
+Hot chocolate
 Jan
 8
-LowerManhattan
+Lower Manhattan
 Coffee
 2.0
 16.0
@@ -466,19 +466,19 @@ True
 2
 9
 0
-[2,1]
-[5,8]
-[2.0,2.5,2.55,3.0]
-[9.0,7.0,6.2]
+[2, 1]
+[5, 8]
+[2.0, 2.5, 2.55, 3.0]
+[9.0, 7.0, 6.2]
 [7]
-['LowerManhattan',"Hell'sKitchen"]
+['Lower Manhattan', "Hell's Kitchen"]
 []
-['BrewedChaitea','Hotchocolate','Gourmetbrewedcoffee']
+['Brewed Chai tea', 'Hot chocolate', 'Gourmet brewed coffee']
 ['Jan']
 ['Sun']
-[5,8]
-['Hotchocolate','Hotchocolate']
-CivetCat
+[5, 8]
+['Hot chocolate', 'Hot chocolate']
+Civet Cat
 True
 True
 True
@@ -487,15 +487,15 @@ False
 False
 False
 True
-SapiensABriefHistoryOfHumankind
+Sapiens A Brief History Of Humankind
 Novel
 1000
 7
-BenjaminGraham
+Benjamin Graham
 80
-BPBPublications(India)
+BPB Publications (India)
 6
-IslamicBooks
+Islamic Books
 8
 8780
 1
@@ -505,18 +505,18 @@ IslamicBooks
 2
 3
 19
-[498,640,80,512,492]
-[1258,1598,528,950,718]
-[30.0,39.0,27.0,13.0]
+[498, 640, 80, 512, 492]
+[1258, 1598, 528, 950, 718]
+[30.0, 39.0, 27.0, 13.0]
 [492]
-[4,6,21,38,18]
-[11.0,23.0,27.0,10.0,13.0]
+[4, 6, 21, 38, 18]
+[11.0, 23.0, 27.0, 10.0, 13.0]
 [498]
 2
-['HistoryandTradition','Business,InvestmentandEconomics','IslamicBooks','IslamicBooks','ComputerScience&Engineering']
-['HarishBhat,B.S.Badan']
-['MadinahArabicReader1','HowHarshMariwala?Groomed?Marico','TraintoPakistan']
-['HistoryandTradition','Business,InvestmentandEconomics','Novel','Novel']
-['YuvalNoahHarari','BenjaminGraham','KhaledHosseini']
-['Novel','Novel','Novel','Self-helpandmeditation','Self-helpandmeditation']
-['1stEdition','Edition','Edition','1stPublished']
+['History and Tradition', ' Business, Investment and Economics', 'Islamic Books', 'Islamic Books', 'Computer Science & Engineering']
+['Harish Bhat , B.S. Badan']
+['Madinah Arabic Reader 1', 'How Harsh Mariwala ?Groomed? Marico', 'Train to Pakistan']
+['History and Tradition', ' Business, Investment and Economics', 'Novel', 'Novel']
+['Yuval Noah Harari', 'Benjamin Graham', 'Khaled Hosseini']
+['Novel', 'Novel', 'Novel', 'Self-help and meditation', 'Self-help and meditation']
+['1st Edition', 'Edition', 'Edition', '1st Published']
