@@ -11,7 +11,7 @@ class Loader:
         self.dataSize = dataSize 
     
     def load_qa(self):
-        test_qa = pd.read_csv("/Users/tonypiacentini/csc-306-Project-4/src/data/test_qa.csv")  
+        test_qa = pd.read_csv("~/csc-306-Project-4/src/data/test_qa.csv")  
         test_qa = test_qa.set_index('dataset')
         return test_qa
     
@@ -19,21 +19,21 @@ class Loader:
         return self.dataSize
     
     def load_dataset(self):
-        ibm_hr = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/066_IBM_HR/{self.dataSize}.parquet")
-        tripadvisor = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/067_TripAdvisor/{self.dataSize}.parquet")
-        worldBank = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/068_WorldBank_Awards/{self.dataSize}.parquet")
-        taxonomy = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/069_Taxonomy/{self.dataSize}.parquet")
-        openfoodfacts = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/070_OpenFoodFacts/{self.dataSize}.parquet")
-        col = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/071_COL/{self.dataSize}.parquet")
-        admissions = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/072_Admissions/{self.dataSize}.parquet")
-        med_cost = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/073_Med_Cost/{self.dataSize}.parquet")
-        lift = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/074_Lift/{self.dataSize}.parquet")
-        mortality = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/075_Mortality/{self.dataSize}.parquet")
-        nba = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/076_NBA/{self.dataSize}.parquet")
-        gestational = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/077_Gestational/{self.dataSize}.parquet")
-        fires = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/078_Fires/{self.dataSize}.parquet")
-        coffee = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/079_Coffee/{self.dataSize}.parquet")
-        books = pd.read_parquet(f"/Users/tonypiacentini/csc-306-Project-4/src/data/080_Books/{self.dataSize}.parquet")
+        ibm_hr = pd.read_parquet(f"~/csc-306-Project-4/src/data/066_IBM_HR/{self.dataSize}.parquet")
+        tripadvisor = pd.read_parquet(f"~/csc-306-Project-4/src/data/067_TripAdvisor/{self.dataSize}.parquet")
+        worldBank = pd.read_parquet(f"~/csc-306-Project-4/src/data/068_WorldBank_Awards/{self.dataSize}.parquet")
+        taxonomy = pd.read_parquet(f"~/csc-306-Project-4/src/data/069_Taxonomy/{self.dataSize}.parquet")
+        openfoodfacts = pd.read_parquet(f"~/csc-306-Project-4/src/data/070_OpenFoodFacts/{self.dataSize}.parquet")
+        col = pd.read_parquet(f"~/csc-306-Project-4/src/data/071_COL/{self.dataSize}.parquet")
+        admissions = pd.read_parquet(f"~/csc-306-Project-4/src/data/072_Admissions/{self.dataSize}.parquet")
+        med_cost = pd.read_parquet(f"~/csc-306-Project-4/src/data/073_Med_Cost/{self.dataSize}.parquet")
+        lift = pd.read_parquet(f"~/csc-306-Project-4/src/data/074_Lift/{self.dataSize}.parquet")
+        mortality = pd.read_parquet(f"~/csc-306-Project-4/src/data/075_Mortality/{self.dataSize}.parquet")
+        nba = pd.read_parquet(f"~/csc-306-Project-4/src/data/076_NBA/{self.dataSize}.parquet")
+        gestational = pd.read_parquet(f"~/csc-306-Project-4/src/data/077_Gestational/{self.dataSize}.parquet")
+        fires = pd.read_parquet(f"~/csc-306-Project-4/src/data/078_Fires/{self.dataSize}.parquet")
+        coffee = pd.read_parquet(f"~/csc-306-Project-4/src/data/079_Coffee/{self.dataSize}.parquet")
+        books = pd.read_parquet(f"~/csc-306-Project-4/src/data/080_Books/{self.dataSize}.parquet")
         data = pd.DataFrame(columns = ['DataSet','DataRaw'])
         data.loc[len(data)] = ['066_IBM_HR', ibm_hr.to_csv(index=False)]
         data.loc[len(data)] = ['067_TripAdvisor', tripadvisor.to_csv(index=False)]
@@ -206,13 +206,13 @@ class run_LLM:
         qa_df = pd.DataFrame()
         qaa = self.test_qa
         # Read the answers from the .txt files into separate lists
-        with open("/Users/tonypiacentini/csc-306-Project-4/src/data/answers.txt", "r") as f:
+        with open("~/csc-306-Project-4/src/data/answers.txt", "r") as f:
             answers = f.read().splitlines()
 
-        with open("/Users/tonypiacentini/csc-306-Project-4/src/data/answers_lite.txt", "r") as f:
+        with open("~/csc-306-Project-4/src/data/answers_lite.txt", "r") as f:
             sample_answers = f.read().splitlines()
 
-        with open("/Users/tonypiacentini/csc-306-Project-4/src/data/semantics.txt", "r") as f:
+        with open("~/csc-306-Project-4/src/data/semantics.txt", "r") as f:
             semantics = f.read().splitlines()
 
         # Combine the lists into a DataFrame
