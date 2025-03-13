@@ -4,6 +4,7 @@ from datasets import Dataset
 from databench_eval import Runner, Evaluator
 from openai import OpenAI
 import numpy as np
+import tiktoken
 
 class Loader:
     def  __init__(self, dataSize = 'sample'):
@@ -57,9 +58,20 @@ class OpenAI_API_setup:
         self.api_key = api_key
         self.client = OpenAI(api_key = self.api_key)
         self.model = model
-        self.prompt = prompt
-        
-    def response(self, question:str, context:str,):
+        self.prompt = prompt.lower()
+
+    def get_message(self, question:str, context:str):
+        message_system_content = self.get_prompt()
+        message = [
+                {
+                    "role": "system",
+                    "content": message_system_content,
+                },
+                {"role": "user", "content": question},
+                {"role": "assistant", "content": context},]
+        return message
+    
+    def response(self, question:str, context:str):
         message_system_content = self.get_prompt()
         response = self.client.chat.completions.create(
             model=self.model,
@@ -76,10 +88,10 @@ class OpenAI_API_setup:
         return response.choices[0].message.content
     
     def get_prompt(self):
-        if self.prompt == 'Z-ICL':
+        if self.prompt == 'z-icl' or self.prompt == 'zero-shot' or self.prompt == 'zero-shot-in-context-learning':
             return self.Z_ICL()
-        elif self.prompt == 'few_shot':
-            return self.few_shot()
+        elif self.prompt == 'chain_of_thought' or self.prompt == 'cot' or self.prompt == 'chain':
+            return self.Chain_of_Thought()
         else:
             return self.Z_ICL()
 
@@ -95,10 +107,17 @@ class OpenAI_API_setup:
 )
         return MESSAGE_SYSTEM_CONTENT
     
-    def few_shot(self):
-        MESSAGE_SYSTEM_CONTENT = ("...") #TODO
+    def Chain_of_Thought(self):
+        chain_of_thought = ("given an example csv with employee data that has"
+        + " columns[Employee_ID, Department, Job_Title, Salary, Years_Experience] when asked 'Does the employee with the highest salary have the most years of experience?"
+        + " 1. Check the Salary column and find the employee_ID with the highest salary" 
+        + " 2. Check the Years_Experience column and find the Employee_ID with the most years of experience" 
+        + "3. Compare the two employee_ID's and if the employee_ID with the highest salary has the most years of experience respond with True else respond with False")
+        MESSAGE_SYSTEM_CONTENT = self.Z_ICL() + chain_of_thought
         return MESSAGE_SYSTEM_CONTENT
-    
+
+    def Few_shot(self):
+        Few_shot = ("")
     
     
     
@@ -109,19 +128,28 @@ class run_LLM:
         self.data = Loader(dataSize)
         self.test_qa = self.data.load_qa()
         self.dataframe = self.data.load_dataset()
+        self.model = model
         
-        
+    def count_tokens(self, text):
+        """Counts the number of tokens in a given text based on the model."""
+        encoding = tiktoken.encoding_for_model(self.model)
+        return len(encoding.encode(str(text)))
+
     def get_answers(self):
+        tokens = 0
         runner = 0
         final = []
         for name, query in self.test_qa.itertuples():
             if(runner % 10 == 0):
                 print(runner)
             datas = self.dataframe.loc[name]
+            tokens += self.count_tokens(self.LLM.get_message(query,datas['DataRaw']))
             result = self.LLM.response(query,datas['DataRaw'])
+            tokens += self.count_tokens(result)
             result = result.replace("{", "").replace("}", "")
             final.append(result)
             runner += 1
+        print(tokens)
         return final
 
 
@@ -328,5 +356,3 @@ class run_LLM:
             print("list[category]:" + str(((lcate[0]-lcate[1])/lcate[0]) * 100) + "%")
              
         return evaluator.eval(valid, lite=lite)
-    
-        
