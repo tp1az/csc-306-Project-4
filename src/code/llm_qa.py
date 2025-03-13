@@ -129,7 +129,7 @@ class run_LLM:
         self.test_qa = self.data.load_qa()
         self.dataframe = self.data.load_dataset()
         self.model = model
-        
+    '''ChatGPT code on how to calculate token counts '''    
     def count_tokens(self, text):
         """Counts the number of tokens in a given text based on the model."""
         encoding = tiktoken.encoding_for_model(self.model)
@@ -166,18 +166,16 @@ class run_LLM:
     def convert_string(self, s):
         """Convert a string to a list, boolean, or float if possible."""
         s = s.strip()
-        # Try converting to a boolean first
         if s.lower() == "true" or s.lower() == "yes" or s.lower() == "y":
             return True
         elif s.lower() == "false" or s.lower() == "no" or s.lower() == "n":
             return False
         try:
             int_val = int(s)
-            if str(int_val) == s:  # Ensure it's a true integer (not "3.14")
+            if str(int_val) == s:  
                 return int_val
         except ValueError:
             pass
-        # Try converting to a float
         try:
             return float(s)
         except ValueError:
@@ -201,7 +199,7 @@ class run_LLM:
         for i in clean_answers:
             valid.append(self.convert_string(i))
         return valid
-
+    '''answer loading file from databench_eval'''
     def load_answers(self):
         qa_df = pd.DataFrame()
         qaa = self.test_qa
@@ -222,7 +220,7 @@ class run_LLM:
         qaa["sample_answer"] = sample_answers
         qaa["type"] = semantics
         return qaa
-        
+    '''Comparison file from databench_eval'''    
     def default_compare(self, value, truth, semantic):
         STRIP_CHARS = "[]'\" "
         semantic = semantic.strip()
